@@ -1,0 +1,26 @@
+{
+  "name": "webpack-react-ts-learn",
+  "version": "1.0.0",
+  "description": "leran webpack、react、typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukecat/webpack-react-ts-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bukecat/webpack-react-ts-learn/issues"
+  },
+  "homepage": "https://github.com/bukecat/webpack-react-ts-learn#readme",
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0"
+  }
+}
