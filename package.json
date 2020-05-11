@@ -4,7 +4,8 @@
   "description": "leran webpack、react、typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.8.3",
+    "webpack-cli": "^3.3.11"
   }
 }
