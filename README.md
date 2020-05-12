@@ -1,1 +1,7 @@
-leran webpack、react、typescript
+Installation
+
+```text
+npm install
+npm run build
+```
+
