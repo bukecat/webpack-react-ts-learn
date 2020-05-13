@@ -11,5 +11,5 @@ npm run build
 
 * development
 ```text
-npm run start
+npm run dev
 ```
