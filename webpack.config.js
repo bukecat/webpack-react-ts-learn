@@ -36,7 +36,7 @@ module.exports = {
     new CleanWebpackPlugin(),
 
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'webpack-react-ts-learn',
       template: './index.html'
     })
   ],
