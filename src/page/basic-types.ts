@@ -79,16 +79,3 @@ let object1: object = null;
 // as语法
 let someValue: any = "this is a string";
 let strLength: number = (someValue as string).length;
-
-
-
-export class BasicTypes extends React.Component{
-  render(){
-    return (
-      <>
-        <div>{tuple1[1]}</div>
-        <div>{enum1}</div>
-      </>
-    )
-  }
-}

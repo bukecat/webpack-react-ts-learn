@@ -1,6 +1,3 @@
-import * as React from "react";
-import {number, string} from "prop-types";
-
 // 必须包含一个label属性且类型为string
 interface LabelledValue {
   label?: string;
@@ -48,15 +45,8 @@ let arr: ReadonlyArray<string> = ['1', '2'];
 let arr2 = arr as string[];
 
 
+printLabel({size: 10, label: '123', name: '456', index: 1, size2: ''}).label;
 
-export class MyFunctions extends React.Component{
-  render(){
-    return (
-      <>
-        {printLabel({size: 10, label: '123', name: '456', index: 1}).label}
-        {printLabel({size: 10, label: '123', name: '456', index: 1} as LabelledValue).label}
-        {printLabel(myObj).label}
-      </>
-    )
-  }
-}
+printLabel({size: 10, label: '123', name: '456', index: 1} as LabelledValue).label;
+
+printLabel(myObj).label;

@@ -3,15 +3,20 @@ import * as ReactDom from 'react-dom';
 
 import { Hello } from "./components/Hello";
 
-import { BasicTypes } from './page/basic-types';
 
-import { MyFunctions } from './page/functions';
+import greeter from './page/class';
+
+console.log(greeter.greet());
+
+
+
+
+
+
 
 ReactDom.render(
   <div>
     <Hello compiler="TypeScript" framework="React"/>
-    <BasicTypes/>
-    <MyFunctions/>
   </div>,
   document.getElementById("example")
 );
