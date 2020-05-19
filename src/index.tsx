@@ -3,12 +3,15 @@ import * as ReactDom from 'react-dom';
 
 import { Hello } from "./components/Hello";
 
-import { TsTest } from './page/ts-test';
+import { BasicTypes } from './page/basic-types';
+
+import { MyFunctions } from './page/functions';
 
 ReactDom.render(
   <div>
     <Hello compiler="TypeScript" framework="React"/>
-    <TsTest/>
+    <BasicTypes/>
+    <MyFunctions/>
   </div>,
   document.getElementById("example")
 );
