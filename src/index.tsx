@@ -4,7 +4,7 @@ import * as ReactDom from 'react-dom';
 import { Hello } from "./components/Hello";
 
 
-import greeter from './page/class';
+import { greeter } from './page/class';
 
 console.log(greeter.greet());
 
