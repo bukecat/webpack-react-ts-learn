@@ -3,12 +3,20 @@ import * as ReactDom from 'react-dom';
 
 import { Hello } from "./components/Hello";
 
-import { TsTest } from './page/ts-test';
+
+import { greeter } from './page/class';
+
+console.log(greeter.greet());
+
+
+
+
+
+
 
 ReactDom.render(
   <div>
     <Hello compiler="TypeScript" framework="React"/>
-    <TsTest/>
   </div>,
   document.getElementById("example")
 );
