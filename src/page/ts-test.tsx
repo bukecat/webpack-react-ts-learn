@@ -34,8 +34,43 @@ enum Color {
 
 const c: Color = Color.Blue;
 
+let d: string = '1';
+type A = typeof d;
+let a: A = '123';
+console.log(a);
+
+
+
 export class TsTest extends React.Component{
   render(){
-    return <div>{c}</div>
+    return <div>{d}</div>
   }
 }
+
+class Animal {
+  #test: string;
+
+  name: string;
+
+  constructor(theName: string) {
+    this.name = theName;
+  }
+
+  move(distanceInMeters: number = 0) {
+    console.log(`${this.name} moved ${distanceInMeters}m.`);
+  }
+}
+
+class Snake extends Animal {
+  constructor(name: string) {
+    super(name); // 调用父类的构造函数
+  }
+
+  move(distanceInMeters = 5) {
+    console.log("Slithering...");
+    super.move(distanceInMeters);
+  }
+}
+
+let sam = new Snake("Sammy the Python");
+sam.move();
